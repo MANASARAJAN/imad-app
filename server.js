@@ -23,7 +23,7 @@ var articleone = {
 
 function createTemplate(data){
     var title = data.title;
-    vat date = data.date;
+    var date = data.date;
     var heading = data.heading;
     var content = data.content;
     
