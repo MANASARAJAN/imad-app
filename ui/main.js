@@ -7,11 +7,11 @@ button.onclick = function(){
     var request = new XMLHttpRequest();
     
     // Capture the response and store it ina variable
-    request.onreadystatechange= function(){
+    request.onreadystatechange = function(){
         if(request.readystate === XMLHttpRequest.DONE){
             // Take some action
             if(request.status === 200){
-               var counter= request.responseText;
+               var counter = request.responseText;
                var span = document.getElementById('count');
                 span.innerHTML = counter.toString();
             }
@@ -19,6 +19,6 @@ button.onclick = function(){
         //not done yet , juz lev it
     };
     // make the request
-     request.open('GET', 'http://manasarajan17.imad.hasura.app.io/counter', true);
+     request.open('GET', 'http://manasarajan17.imad.hasura-app.io/counter', true);
      request.send(null);
 };
