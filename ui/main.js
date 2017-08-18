@@ -16,7 +16,7 @@ button.onclick = function(){
                 span.innerHTML = counter.toString();
             }
         }
-        //not done yet , juz lev it
+        //not done yet
     };
     // make the request
      request.open('GET', 'http://manasarajan17.imad.hasura-app.io/counter', true);
