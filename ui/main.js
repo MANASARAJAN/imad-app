@@ -20,6 +20,5 @@ button.onclick = function(){
     };
     // make the request
      request.open('GET', 'http://manasarajan17.imad.hasura-app.io/counter', true);
-     request.send();
-     console.log('EXECUTED');
+     request.send(null);
 };
