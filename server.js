@@ -103,14 +103,14 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var names[];
+var names=[];
 app.get('/submit-name/:name', function(req, res){
    //get the names from the request
    var name = req.params.name;
    
    names.push(name);
    //JSON: Javascript Object Notation
-   res.send(JSON.stringify(names));  //TODO
+   res.send(JSON.stringify(names)); 
 });
 
 
