@@ -21,6 +21,7 @@ button.onclick = function () {
     // make the request
      request.open('GET', 'http://manasarajan17.imad.hasura-app.io/counter', true);
      request.send(null);
+     console.log('EXECUTED');
 };
 
 //submit name
@@ -51,7 +52,7 @@ submit.onclick = function() {
         //not done yet
     };
     // make the request
-     request.open('GET', 'http://manasarajan17.imad.hasura-app.io/submit-name?name='+ nane, true);
+     request.open('GET', 'http://manasarajan17.imad.hasura-app.io/submit-name?name=' +name, true);
      request.send(null);
      console.log('EXECUTED');
         
